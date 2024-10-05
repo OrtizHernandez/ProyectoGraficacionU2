@@ -1,6 +1,6 @@
 package org.example.Main;
 
-import org.example.Vista.vistaGraficacion;
+import org.example.Vista.vistaMenuPrincipal;
 
 import javax.swing.*;
 
@@ -11,7 +11,7 @@ public class Main {
 
            public void run() {
 
-               JFrame ventana = new vistaGraficacion();
+               JFrame ventana = new vistaMenuPrincipal();
                ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                ventana.setVisible(true);
                ventana.setLocation(310,80);

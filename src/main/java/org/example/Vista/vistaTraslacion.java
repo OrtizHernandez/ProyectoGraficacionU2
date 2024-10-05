@@ -34,11 +34,12 @@ public class vistaTraslacion extends  JFrame{
     int ancho = 100;
     int alto = 100;
 
-
+    //---------------------------------------------------------------------------------------------------
+    //Este es el metodo que le adjunte para poder recuperar el panel general y que se muestre en el card
     public JPanel getPanel(){
         return panelGeneralTraslacion;
     }
-
+    //-------------------------------------------------------------------------------------------------------
 
     protected void paintComponent(Graphics g) {
         super.paint(g);

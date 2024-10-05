@@ -22,10 +22,13 @@ public class vistaRotacion {
 
     int giro = 0;
 
+    //---------------------------------------------------------------------------------------------------
+    //Este es el metodo que le adjunte para poder recuperar el panel general y que se muestre en el card
     public JPanel getPanel(){
 
         return panelGeneralRotacion;
     }
+    //-------------------------------------------------------------------------------------------------
 
     public vistaRotacion(){
 

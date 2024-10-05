@@ -13,12 +13,20 @@ public class vistaReflexion {
     private JButton btnReflexionX;
     private JButton btnReflexionY;
 
+    //---------------------------------------------------------------------------------------------------
+    //Este es el metodo que le adjunte para poder recuperar el panel general y que se muestre en el card
+    public JPanel getPanel(){
+        return panelGeneralReflexion;
+    }
+    //---------------------------------------------------------------------------------------------------
+
     public class Romboide {
 
         int[] punto1 = new int[2];
         int[] punto2 = new int[2];
         int[] punto3 = new int[2];
         int[] punto4 = new int[2];
+
 
         public Romboide(int[] puntoInicial, int[] vector1, int[] vector2) {
 
@@ -81,9 +89,7 @@ public class vistaReflexion {
     boolean reflejadoX = false;
     boolean reflejadoY = false;
 
-    public JPanel getPanel(){
-        return panelGeneralReflexion;
-    }
+
 
     public vistaReflexion(){
 

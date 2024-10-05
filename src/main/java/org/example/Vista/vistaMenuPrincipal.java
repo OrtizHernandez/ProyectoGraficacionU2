@@ -9,9 +9,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class vistaGraficacion extends JFrame{
+public class vistaMenuPrincipal extends JFrame{
 
-    CardLayout card = new CardLayout();
+
 
     private JPanel panel1;
     private JPanel panelGeneral;
@@ -26,15 +26,21 @@ public class vistaGraficacion extends JFrame{
     private JLabel lblTransformacion;
     private JButton btnReflexion;
 
+    //-------------------------------------------------------------------------------------------
+    //Creo un objeto cardlayout para asignarselo como layout a su panel correspondiente
+
+    CardLayout card = new CardLayout();
     JPanel panelCentro = new JPanel(card);
 
+    //instancio los demas Frames para su posterior uso
     vistaTraslacion traslacion = new vistaTraslacion();
     vistaEscalamiento escalamiento = new vistaEscalamiento();
     vistaRotacion rotacion = new vistaRotacion();
     vistaSesgo sesgo = new vistaSesgo();
     vistaReflexion reflexion = new vistaReflexion();
+    //-------------------------------------------------------------
 
-    public vistaGraficacion(){
+    public vistaMenuPrincipal(){
 
 
         super("Proyecto Graficacion U2");
@@ -53,8 +59,17 @@ public class vistaGraficacion extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
+
+            //Aqui al panel card le añado el panel que se desea usar haciendo uso del metodo creado por mi
+            //.getPanel() (para ver mas sobre el metodo revisar cada una de las demas vistas)
             panelCentro.add(traslacion.getPanel(),"traslacion");
+            //ademas de añadirle el panel a mostrar al final tambien se crea una referencia a modo de string
+
+
             card.show(panelCentro,"traslacion");
+                //uso el metodo .show(); para que se mueste el panel deseado y se adjunta la referencia antes creada
+                //la sintaxis es Cardlayout.show(panelCard,"referencia")
+
             SwingUtilities.updateComponentTreeUI(panelCentro);
             panelCentro.repaint();
 
@@ -68,8 +83,15 @@ public class vistaGraficacion extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                //Aqui al panel card le añado el panel que se desea usar haciendo uso del metodo creado por mi
+                //.getPanel() (para ver mas sobre el metodo revisar cada una de las demas vistas)
                 panelCentro.add(escalamiento.getPanel(),"escalamiento");
+                //ademas de añadirle el panel a mostrar al final tambien se crea una referencia a modo de string
+
                 card.show(panelCentro,"escalamiento");
+                //uso el metodo .show(); para que se mueste el panel deseado y se adjunta la referencia antes creada
+                //la sintaxis es Cardlayout.show(panelCard,"referencia")
+
                 SwingUtilities.updateComponentTreeUI(panelCentro);
                 panelCentro.repaint();
 
@@ -85,8 +107,15 @@ public class vistaGraficacion extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
+                //Aqui al panel card le añado el panel que se desea usar haciendo uso del metodo creado por mi
+                //.getPanel() (para ver mas sobre el metodo revisar cada una de las demas vistas)
                 panelCentro.add(rotacion.getPanel(),"rotacion");
+                //ademas de añadirle el panel a mostrar al final tambien se crea una referencia a modo de string
+
                 card.show(panelCentro,"rotacion");
+                //uso el metodo .show(); para que se mueste el panel deseado y se adjunta la referencia antes creada
+                //la sintaxis es Cardlayout.show(panelCard,"referencia")
+
                 SwingUtilities.updateComponentTreeUI(panelCentro);
                 panelCentro.repaint();
 
@@ -101,8 +130,15 @@ public class vistaGraficacion extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
+                //Aqui al panel card le añado el panel que se desea usar haciendo uso del metodo creado por mi
+                //.getPanel() (para ver mas sobre el metodo revisar cada una de las demas vistas)
                 panelCentro.add(sesgo.getPanel(),"sesgo");
+                //ademas de añadirle el panel a mostrar al final tambien se crea una referencia a modo de string
+
                 card.show(panelCentro,"sesgo");
+                //uso el metodo .show(); para que se mueste el panel deseado y se adjunta la referencia antes creada
+                //la sintaxis es Cardlayout.show(panelCard,"referencia")
+
                 SwingUtilities.updateComponentTreeUI(panelCentro);
                 panelCentro.repaint();
 
@@ -117,8 +153,15 @@ public class vistaGraficacion extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
+                //Aqui al panel card le añado el panel que se desea usar haciendo uso del metodo creado por mi
+                //.getPanel() (para ver mas sobre el metodo revisar cada una de las demas vistas)
                 panelCentro.add(reflexion.getPanel(),"reflexion");
+                //ademas de añadirle el panel a mostrar al final tambien se crea una referencia a modo de string
+
                 card.show(panelCentro,"reflexion");
+                //uso el metodo .show(); para que se mueste el panel deseado y se adjunta la referencia antes creada
+                //la sintaxis es Cardlayout.show(panelCard,"referencia")
+
                 SwingUtilities.updateComponentTreeUI(panelCentro);
                 panelCentro.repaint();
 

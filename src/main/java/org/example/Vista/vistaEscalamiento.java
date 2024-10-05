@@ -107,7 +107,8 @@ public class vistaEscalamiento {
     double escaladoY = 0.0;
 
 
-
+    //---------------------------------------------------------------------------------------------------
+    //Este es el metodo que le adjunte para poder recuperar el panel general y que se muestre en el card
     public JPanel getPanel() {
         return panelGeneralEscalamiento;
     }

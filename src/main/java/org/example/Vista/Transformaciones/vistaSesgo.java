@@ -23,11 +23,12 @@ public class vistaSesgo {
 
     public Cuadrado cuadrado = new Cuadrado(puntoInicio,ladoX,ladoY);
 
-
+    //---------------------------------------------------------------------------------------------------
+    //Este es el metodo que le adjunte para poder recuperar el panel general y que se muestre en el card
     public JPanel getPanel(){
-
         return panelGeneralSesgo;
     }
+    //------------------------------------------------------------------------------------------------------
 
     public vistaSesgo(){
 
